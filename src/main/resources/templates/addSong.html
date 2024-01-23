@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Album</title>
+</head>
+<body>
+<style>
+        body {
+            background:#FFA500;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            width: 45%;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 45%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="addSong" method="POST">
+        <label for="name">Song name :</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="artist">Song artist :</label>
+        <input type="text" name="artist" id="artist" required>
+
+        <label for="genre">Song genre :</label>
+        <input type="text" name="genre" id="genre" required>
+
+        <label for="link">Song link :</label>
+        <input type="text" name="link" id="link" required>
+
+        <input type="submit" value="Add Song"> 
+    </form>
+</body>
+</body>
+</html>

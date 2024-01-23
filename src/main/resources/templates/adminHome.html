@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>admin_Home</title>
+</head>
+<body>
+	<style>
+html, body {
+	background: #ADFF2F;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+a {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
+	background-color: #3498db;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+/* Navbar styles */
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.logout-btn {
+	margin-left: auto;
+	padding: 5px 10px;
+	text-decoration: none;
+	background-color: #e74c3c; /* Red color for logout button */
+	color: #ffffff;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+	<!-- Nav_bar -->
+	<div class="navbar">
+		<!-- Logout button -->
+		<a class="logout-btn" href="logout">LOGOUT</a>
+	</div>
+	<h2>admin_home</h2>
+	<a href="addSong">add a new song</a>
+	<a href="viewSongs">view all songs</a>
+	<a href="createPlaylist">create play_list</a>
+	<a href="viewPlaylists">view playlist</a>
+</body>
+</body>
+</html>
